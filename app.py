@@ -13,14 +13,10 @@ c = (
     alt.Chart(df)
     .mark_circle()
     .encode(
-        x="Low",
-        y="High",
+        x=alt.X("Low", axis=alt.Axis(title="Low/Entry-Level Compensation ($)")),
+        y=alt.Y("High", axis= alt.Axis(title="High/Peak Compensation ($)")),
         color ="Degreed",
         tooltip="Occupation"
-    )
-    .resolve_axis(
-        x="Test",
-        y="test"
     )
 )
 
