@@ -3,7 +3,7 @@ pd.options.display.max_rows = 200
 import streamlit as st
 import altair as alt
 
-st.header("Degree Requirements and Average Annualized Compensations")
+st.header("Degree Requirements and Average Annualized Compensations in the Cincinnati MSA")
 st.write("Maintained by Nick Winnenberg: Nick@Winnenberg.Org.")
 
 df= pd.read_csv("Occupation Data.csv")
