@@ -18,6 +18,10 @@ c = (
         color ="Degreed",
         tooltip="Occupation"
     )
+    .resolve_axis(
+        x="Test",
+        y="test"
+    )
 )
 
 st.altair_chart(c)
