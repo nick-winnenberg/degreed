@@ -1,6 +1,4 @@
 import pandas as pd
-import matplotlib.pylab as plt
-plt.style.use('ggplot')
 pd.options.display.max_rows = 200
 import streamlit as st
 import altair as alt
@@ -11,7 +9,7 @@ st.write("Maintained by Nick Winnenberg: Nick@Winnenberg.Org.")
 df= pd.read_csv("Occupation Data.csv")
 df = df.sort_values(by="Average",ascending=False)
 
-#st.scatter_chart(data=df,x="Low",y="High", color="Degreed",size="Occupation",x_label="Entry Level Compensation ($)",y_label="Peak Compensation ($)",)
+st.scatter_chart(data=df,x="Low",y="High", color="Degreed",size="Occupation",x_label="Entry Level Compensation ($)",y_label="Peak Compensation ($)",)
 
 c = (
     alt.Chart(df)
